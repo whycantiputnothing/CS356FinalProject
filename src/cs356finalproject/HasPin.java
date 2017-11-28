@@ -40,7 +40,7 @@ public class HasPin implements ATMState {
             System.out.println("You don't have that much cash available");
             System.out.println("Your card is ejected");
             atmMachine.setATMState(atmMachine.getNoCardState());
-            return "You don't have that much cash availible\n" + 
+            return "You don't have that much cash available\n" + 
                     "Your card is ejected";
         } else {
             System.out.println("$" + cashToWithdraw + " is provided by the machine");
