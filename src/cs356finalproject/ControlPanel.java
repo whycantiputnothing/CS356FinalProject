@@ -247,14 +247,24 @@ public class ControlPanel extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonEjectCardActionPerformed
 
     private void jButtonWithdrawCashActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonWithdrawCashActionPerformed
-        JOptionPane.showMessageDialog(rootPane, atmMachine.requestCash(
-                Integer.parseInt(jTextField1.getText())));
+        int cash;
+        try {
+            cash = Integer.parseInt(jTextField1.getText());
+        } catch (NumberFormatException e) {
+            cash = 0;
+        }
+        JOptionPane.showMessageDialog(rootPane, atmMachine.requestCash(cash));
         jTextField1.setText("");
     }//GEN-LAST:event_jButtonWithdrawCashActionPerformed
 
     private void jButtonInsertPinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonInsertPinActionPerformed
-        JOptionPane.showMessageDialog(rootPane, atmMachine.insertPin(
-                Integer.parseInt(jTextField1.getText())));
+        int cash;
+        try {
+            cash = Integer.parseInt(jTextField1.getText());
+        } catch (NumberFormatException e) {
+           cash = 0;
+        }
+        JOptionPane.showMessageDialog(rootPane, atmMachine.insertPin(cash));
         jTextField1.setText("");
     }//GEN-LAST:event_jButtonInsertPinActionPerformed
 
