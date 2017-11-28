@@ -309,7 +309,7 @@ public class ControlPanel extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-        // TODO add your handling code here:
+        jTextField1.setText(jTextField1.getText() + jButton14.getText());
     }//GEN-LAST:event_jButton14ActionPerformed
 
 
